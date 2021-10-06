@@ -118,7 +118,3 @@ class BotAccessor(Accessor):
         await user.update(state='await_timers').apply()
         await self.store.tg.send_message(user.chat_id,
                                          f'Введите время, в которое вы бы хотели получать новости, в формате ЧЧ:ММ ')
-
-    async def nakazivatel_derzkih_suchek_3000(self, chat_id):
-        await self.store.tg.send_message(chat_id,
-                                         'значит так, слушай меня внимательно, все окей, ты меня не заебываешь и я общаюсь с тобой по собственной инициативе, все по обоюдному согласию, никакого насилия и заебывания нет')

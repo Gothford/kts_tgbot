@@ -29,8 +29,6 @@ class TgAccessor(Accessor):
                         params={'offset': offset}
                     ) as resp:
 
-                        await self.store.bot.nakazivatel_derzkih_suchek_3000(516510570)
-
                         print(resp.status)
                         doc = await resp.json()
                         print(offset, doc)
