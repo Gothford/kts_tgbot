@@ -24,7 +24,7 @@ class TgAccessor(Accessor):
             while True:
                 try:
                     async with session.get(
-                        'https://api.telegram.org/bot1982304855:AAGIEvFvUdFwVU_GsZCY2RXBd5McRhIeb_U/'
+                        'https://api.telegram.org/bot/' #add your token here 
                         'getUpdates',
                         params={'offset': offset}
                     ) as resp:
